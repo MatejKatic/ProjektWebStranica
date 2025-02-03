@@ -1,0 +1,227 @@
+@media only screen and (max-width: 768px) {
+
+    h2 {
+        padding: 1em 0;
+    }
+
+    h3{
+        font-size: 1.125em;
+    }
+
+    .logo {
+        width: 7%;
+    }
+
+    .box {
+        width: 100%;
+        margin: 0.5% 0;
+        float: none;
+        height: auto;
+    }
+
+    .box-p {
+        width: 100%;
+        margin: 1% 0;
+        float: none;
+    }
+
+    .karta-box-l {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 0 0 1em 0;
+    }
+    
+    .karta-box-d {
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+        padding: 0 0 1em 0;
+    }
+
+    .novosti-box {
+        width: 100%;
+        float: none;
+        padding: 1em 0;
+    }
+
+    .novosti-slika {
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .baner-txt {
+        width: 80%;
+        margin: 0 10%;
+        padding: 50% 0 0 0;
+        font-size: 2em;
+        text-shadow: 2px 2px 2px #000000;
+    }
+
+    .novosti-sl{
+        width: 100%;
+        margin: 0;
+    }
+
+    .naziv-k {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+    
+    .kolegij {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 850px){
+
+    .box {
+        height: 700px;
+    }
+
+    .naziv-k {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+    
+    .kolegij {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 900px){
+
+    .box {
+        height: 650px;
+    }
+
+    .naziv-k {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+    
+    .kolegij {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 950px){
+
+    .box {
+        height: 600px;
+    }
+
+    .naziv-k {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+    
+    .kolegij {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1000px){
+
+    .box {
+        height: 570px;
+    }
+
+    .naziv-k {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+    
+    .kolegij {
+        width: 100%;
+        margin: 0 0 1em 0;
+        padding: 0;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px){
+
+    .box {
+        height: 570px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px){
+
+    .box {
+        height: 520px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+
+    .logo {
+        width: 5%;
+    }
+
+    h2 {
+        padding: 1.75em 0;
+    }
+
+    .box-p {
+        width: 45%;
+        margin: 1em 2%;
+        float: left;
+        padding: 0;
+    }
+
+    .karta-box-l {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 0 0 1em 0;
+    }
+    
+    .karta-box-d {
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+        padding: 0 0 1em 0;
+    }
+
+    .novosti-box {
+        width: 60%;
+        float: none;
+        padding: 1em 0;
+        margin: auto;
+    }
+
+    .novosti-slika {
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .novosti-sl{
+        width: 100%;
+        margin: 0;
+    }
+}

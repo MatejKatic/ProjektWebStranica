@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="all">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+
+</head>
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="slike/Algebra-logo.png" title="Algebra"></a></div>
+
+  <div class="top-menu">
+			<span class="menu"> </span> 
+				<nav class="cl-effect-1" id="cl-effect-1">
+				 <ul>
+          <li><a href="index.html" title="Početna">Početna</a></li>
+          <li><a href="onama.html" title="O nama">O nama</a></li>
+          <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+          <li><a href="nastava.html" title="Nastavni plan">Nastavni plan</a></li>
+          <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li> 	 
+				</ul>	
+				</nav>			 
+
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+     <!-- script-for-menu -->
+    </header>
+
+  <video-bg>
+    <video autoplay muted loop id="myVideo" poster="video/typingOnlaptop.jpg">
+      <source src="video/typingOnlaptop.mp4" type="video/mp4">
+    </video>
+    <div class="typebox">
+      <div id="demo"></div>
+    </div>
+  </video-bg>
+    
+  <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+  </script>
+
+<script src="js/typing.js"></script>
+<script>
+    // _(selector, speed, initialDelay)
+    _$("demo", 100, 800)
+        .type("Budi izvrstan u onome što vidiš", {
+          color: "white",
+        }).wait(1000).speed(100)
+        .delete("vidiš").wait(1000).speed(200)
+        .type("voliš", { 
+            fontWeight: "bold", 
+            color: "white",
+        }).wait(1000)
+        .lineBreak()
+        .type("ZAISKRI.", { 
+            fontWeight: "bold", 
+            color: "red",
+        }).wait(1000)
+        .lineBreak();
+</script>
+    
+</body>
+</html>

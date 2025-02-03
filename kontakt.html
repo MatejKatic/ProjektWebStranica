@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<link rel="stylesheet" href="css/style.css" media="all">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/gen_validatorv31.js"></script>
+
+</head>
+
+<body>
+
+
+          <div id="kontakt">
+            <div class="container">
+                <h4>Kontaktirajte nas</h4>
+                <form method="POST" name="contactform" action="contact-form-handler.php" >
+      
+                <label for="name">Puno ime:</label>
+                <input type="text" id="name" name="name" placeholder="Puno ime..">
+      
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+      
+                <label for="vaznost">Važnost poruke:</label>
+                <select id="vaznost" name="vaznost">
+                <option value="visoka">Visoka</option>
+                <option value="niska">Niska</option>
+                </select>
+      
+                <label for="poruka">Vaša poruka:</label>
+                <textarea id="poruka" name="poruka" placeholder="Vaša poruka" style="height:100px"></textarea>
+      
+                <label for="checkbox">Primaj newsletter</label>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    
+                <input type="submit" value="Pošalji" />
+                <input type="reset" value="Odustani" />
+      
+                </form>
+            </div>
+        </div>
+      
+      
+  
+      <script>
+        var frmvalidator  = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Molimo upišiote svoje ime"); 
+        frmvalidator.addValidation("email","req","Molimo upišite svoju email adresu"); 
+        frmvalidator.addValidation("email","email","Upišite ispravnu email adresu"); 
+        frmvalidator.addValidation("poruka","req","Upišite vašu kratku poruku");
+      </script>
+
+
+
+
+</body>
+</html>

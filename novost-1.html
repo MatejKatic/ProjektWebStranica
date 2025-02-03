@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/afterglow.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><a href="index.html"><img src="slike/Algebra-logo.png" title="Algebra"></a></div>
+  
+    <div class="top-menu">
+    <span class="menu"> </span> 
+      <nav class="cl-effect-1" id="cl-effect-1">
+      <ul>
+            <li><a href="index.html" title="Početna">Početna</a></li>
+            <li><a href="onama.html" title="O nama">O nama</a></li>
+            <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+            <li><a href="nastava.html" title="Nastavni plan">Nastavni plan</a></li>
+            <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li> 
+      </ul>	
+    
+      </nav>			 
+  
+         <!-- script-for-menu -->
+       <script>
+          $("span.menu").click(function(){
+            $(".top-menu ul").slideToggle("slow" , function(){
+            });
+          });
+       </script>
+       <!-- script-for-menu -->
+  </header>
+
+<main>
+
+    <section>
+        <div id="baner1" data-animation="fadeInDown"><div class="baner-txt" data-animation="fadeInDown">Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti</div></div>
+        <h1 data-animation="fadeInUp">WorldSkills natjecanje - Kazan 2019.</h1>
+    </section>
+
+    <article>
+      <div id="novosti">
+        <div class="novosti-sve">
+          <div class="novosti-tekst">Nakon godinu dana priprema za natjecanje WorldSkills Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz cijelog svijeta, trud se itekako isplatio. Josip,
+            student 3. godine preddiplomskog studija sistemskog inženjerstva osvojio je 12. mjesto u vještini IT Networks and System Administration te osvojio medalju
+            izvrsnosti! Čestitke Josipu ali i njegovim/našim mentorima koji su ga pripremali za ovo natjecanje – voditelju studija sistemskog inženjerstva Silviju
+            Papiću, voditelju katedre za operacijske sustave – Vedranu Dakiću i asistentu na studiju sistemskog inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+            studentu 3.godine preddiplomskog studija programskog inženjerstva Josipu Horvatu i mentoru voditelju katedre za programsko inženjerstvo - Goranu Đambiću na osvojenom
+            16.mjestu u vještini IT Software Solutions for Business.</div>
+          <div class="novosti-sl">
+            <div class="novosti-sl-li"><a href="slike/galerija1.jpg" data-fancybox="galerija" data-caption="WorldSkills natjecanje - Kazan 2019."><img src="slike/galerija1.jpg" alt="Novosti"></a></div>
+            <div class="novosti-sl-de"><a href="slike/galerija2.jpg" data-fancybox="galerija" data-caption="WorldSkills natjecanje - Kazan 2019."><img src="slike/galerija2.jpg" alt="Novosti"></a></div>
+            <div class="novosti-video"><video class="afterglow" id="myvideo" width="1280" height="720" poster="video/worldskills.jpg" src="video/worldskills.mp4" ></video></div>
+          </div>
+        </div>
+    </div>
+    </article>
+
+</main>
+
+<footer>
+  <h3>Budi izvrstan u onome što voliš <br> <span>Zaiskri</span></h3>
+</footer>
+
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>

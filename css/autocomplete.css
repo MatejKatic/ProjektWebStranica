@@ -1,0 +1,109 @@
+#autoComplete {
+  height: 48px;
+  width: 100%;
+  margin: 0;
+  padding: 0 32px 0 32px;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  color: rgba(0, 0, 0, 0.6);
+  outline: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.autoComplete_okvir {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+#autoComplete_list {
+  position: static;
+  top: 100%;
+  left: 0px;
+  right: 0;
+  padding: 0;
+  margin-top: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 6px rgba(149, 157, 165, .15);
+  z-index: 1000;
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.autoComplete_result {
+  font-weight: bold;
+  margin: 4.8px;
+  padding: 8px 8px;
+  list-style: none;
+  text-align: left;
+  font-size: 16px;
+  color: #212121;
+  transition: all .1s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all .2s ease
+}
+
+.autoComplete_result:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15)
+}
+
+#tablica {
+  height: 100%;
+  margin: 0;
+  float: right;
+  display: inline;
+  visibility: hidden;
+  border-left: 0px solid;
+  border-right: 0px solid;
+  border-collapse: collapse;
+}
+
+#tablica tfoot {
+
+  border-top: 3px solid rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#tablica th {
+  font-weight: bold;
+  padding: 15px;
+}
+
+#tablica th,
+td {
+  text-align: left;
+  padding: 3px 15px;
+}
+
+#tablica tr:nth-child(even) {
+  background-color: #f2f2f2;
+  border-TOP: 1px solid rgb(155, 149, 149);
+  border-bottom: 1px solid rgb(155, 149, 149);
+}
+
+#tab {
+  display: inline-block;
+}
+
+.buttonzaBrisanje {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 1px 3px 2px #888888;
+}

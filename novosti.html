@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="slike/Algebra-logo.png" title="Algebra"></a></div>
+
+  <div class="top-menu">
+	<span class="menu"> </span> 
+		<nav class="cl-effect-1" id="cl-effect-1">
+		<ul>
+          <li><a href="index.html" title="Početna">Početna</a></li>
+          <li><a href="onama.html" title="O nama">O nama</a></li>
+          <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+          <li><a href="nastava.html" title="Nastavni plan">Nastavni plan</a></li>
+          <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li> 
+    </ul>	
+  
+		</nav>			 
+
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+     <!-- script-for-menu -->
+</header>
+
+<main>
+
+    <div id="prazno"></div>
+
+    <section>
+        <h1 data-animation="fadeInUp">Novosti</h1>
+    </section>
+
+    <article>
+        <div id="novosti">
+            <div class="novosti-sve">
+                <div class="novosti-box" data-animation="fadeInUp" data-animation-delay="500ms">
+                    <div class="novosti-slika"><a href="novost-1.html"><img src="slike/novost1a.jpg" alt="novost-1"><div class="novosti-txt"><span>28.08.2019.</span><br>Josipa, student 3. godine preddiplomskog studija sistemskog inženjerstva osvojio je 12. mjesto u vještini IT Networks and System Administration</div></a></div>
+                </div>
+                <div class="novosti-box" data-animation="fadeInUp" data-animation-delay="500ms">
+                    <div class="novosti-slika"><a href="novost-2.html"><img src="slike/novost2a.jpg" alt="novost-2"><div class="novosti-txt"><span>22.07.2019.</span><br>Nakon velikog broja prijava koje smo primili, detaljnom analizom i provjerom utvrdili smo dobitnike ovogodišnjeg stipendijskog natječaja za maturante!</div></a></div>
+                </div>
+                <div class="novosti-box" data-animation="fadeInUp" data-animation-delay="500ms">
+                    <div class="novosti-slika"><a href="novost-3.html"><img src="slike/novost3a.jpg" alt="novost-3"><div class="novosti-txt"><span>18.04.2019.</span><br>Algebra Junior organizira edukativne i zabavne ljetne praznike za sve osnovnoškolce!</div></a></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</main>
+
+<footer>
+  <h3>Budi izvrstan u onome što voliš <br> <span>Zaiskri</span></h3>
+</footer>
+
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>

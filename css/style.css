@@ -1,0 +1,580 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+      font-family: 'calibri';
+      src: url(../font/calibri.ttf) format('truetype');
+	  font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Coda';
+      src: url(../font/Coda.ttf) format('truetype');
+	  font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
+    font-family: 'FRHND575';
+    src: url(../font/FRHND575.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: verdana;
+	color: #000000;
+	font-size: 100%;
+	background: #ffffff;
+}
+
+[data-animation] {
+    opacity: 0;
+}
+
+[data-animation].animated {
+    opacity: 1;
+}
+
+::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    width: 60%;
+    margin: 1em 20%;
+    padding: 0 0 0.5em 0;
+    border-bottom: 5px ridge #ffff00;
+    text-align: center;
+    font-family: 'calibri', calibri;
+    color: #000000;
+    font-weight: bold;
+  }
+
+h2 {
+    font-size: 2em;
+    width: 100%;
+    margin: 0;
+    padding: 2.5em 0 1em 0;
+    color: #9e0b0f;
+    font-family: 'calibri', calibri;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+h3{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000000;
+    margin: 0;
+    font-family: 'Coda', Coda;
+    line-height: 2em;
+}
+
+h3 span {
+    color: #9e0b0f;
+}
+
+h4 {
+    font-size: 2em;
+    color: #000000;
+    text-align: left;
+    padding: 0.5em 0;
+    margin: 1em 0;
+    font-family: 'Coda', Coda;
+    line-height: 2em;
+    border-bottom: 2px solid #ccc;
+}
+
+h5 {
+    font-size: 1.5em;
+    color: #000000;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0;
+    font-family: 'Coda', Coda;
+    line-height: 2em;
+}
+
+h6 {
+    font-size: 1em;
+    color: #000000;
+    text-align: left;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-family: 'Coda', Coda;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+	margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    z-index: 9998;
+}
+
+.logo {
+    width: 3%;
+    margin: 0.5% 3% 0.5% 5%;
+    padding: 0;
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+}
+
+video-bg {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+#myVideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+  }
+
+.typebox {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+
+.typebox > div {
+    font-family: 'Coda', Coda;
+    position: relative;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 80%;
+}
+
+section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+article {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: inline-block;
+}
+
+#prazno {
+    width: 100%;
+    margin: 0;
+    padding: 2em 0;
+}
+
+#baner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    overflow: hidden;
+}
+
+#baner img {
+    margin: -20% 0 0 0;
+}
+
+#baner1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    background: url(../slike/novost1.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+#baner2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    background: url(../slike/novost2.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+#baner3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    background: url(../slike/novost3.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.baner-txt {
+    width: 50%;
+    margin: 0 25%;
+    padding: 15% 0 0 0;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Coda', Coda;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.tekst {
+    width: 70%;
+    margin: 0 15%;
+    padding: 2em 0 0 0;
+    font-family: 'FRHND575', FRHND575;
+    font-size: 2em;
+}
+
+.tekst1 {
+    width: 70%;
+    margin: 0 15%;
+    padding: 2em 0;
+    font-family: 'FRHND575', FRHND575;
+    font-size: 2em;
+
+}
+.tablice {
+    width: 80%;
+    margin: 0 10%;
+    padding: 2em 0 0 0;
+    display: inline-block;
+}
+
+.box {
+    width: 32%;
+    margin: 0 0.5% 0.5% 0.5%;
+    float: left;
+    padding: 0;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    height: 460px;
+}
+
+.box-naslov {
+    width: 90%;
+    margin: 5% 5% 0 5%;
+    padding: 0 0 5% 0;
+    text-align: left;
+    border-bottom: 1px solid #b7b7b7;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-family: 'Coda', Coda;
+}
+
+.box-tekst {
+    width: 90%;
+    margin: 5%;
+    padding: 0;
+    text-align: justify;
+}
+
+.partneri {
+    width: 80%;
+    margin: 0 10%;
+    padding: 2em 0 0 0;
+    display: inline-block;
+}
+
+.box-p {
+    width: 20%;
+    margin: 2.5%;
+    float: left;
+    padding: 0;
+}
+
+.box-p-naslov {
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    text-align: justify;
+    border-bottom: 1px solid #b7b7b7;
+    text-transform: uppercase;
+    font-size: 0.9375em;
+    font-family: 'Coda', Coda;
+    font-weight: bold;
+}
+
+.box-p-tekst {
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.box-p-tekst img {
+    width: 100%;
+}
+
+#karta {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../slike/kakoDoNas.jpg);
+    background-size: cover;
+}
+
+.karta-box {
+    width: 70%;
+    margin: 2em 15%;
+    padding: 0;
+    display: inline-block;
+}
+
+.karta-box-l {
+    width: 48%;
+    height: 490px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    border: 1px solid #959595;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.karta-box-d {
+    width: 48%;
+    height: 490px;
+    margin: 0 0 0 3.5%;
+    padding: 0;
+    border: 1px solid #959595;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.karta-n {
+    width: 94%;
+    margin: 0 3%;
+    padding: 1em 0 0 0;
+    text-align: left;
+    font-size: 1.125em;
+    font-family: 'Coda', Coda;
+    font-weight: bold;
+}
+
+.karta-txt {
+    width: 80%;
+    margin: 0 10%;
+    padding: 1em 0 0 0;
+}
+
+.karta-g {
+    width: 96%;
+    margin: 1em 2%;
+    padding: 0;
+    border: 1px solid #959595;
+    border-radius: 5px;
+}
+
+#novosti {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.novosti-sve {
+    width: 80%;
+    margin: 2em 10%;
+    padding: 0;
+}
+
+.novosti-box {
+    width: 33.33333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 3em 0;
+}
+
+.novosti-slika {
+    display: inline-block;
+    margin: 0 10%;
+    max-width: 80%;
+}
+
+.novosti-slika img {
+    max-width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 20px solid #f7f7f7;
+    box-shadow: 0px 0px 20px #959595;
+}
+
+.novosti-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.novosti-txt span {
+    color: #ffff00;
+}
+
+.novosti-tekst {
+    width: 80%;
+    margin: 2em 10%;
+    padding: 0;
+    font-family: 'Coda', Coda;
+    font-size: 1.125em;
+}
+
+.novosti-sl{
+    width: 50%;
+    margin: 0 25%;
+    padding: 0;
+    display: inline-block;
+}
+
+.novosti-sl-li {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.novosti-sl-li img {
+    width: 96%;
+    margin: 2%;
+}
+
+.novosti-sl-de {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.novosti-sl-de img {
+    width: 96%;
+    margin: 2%;
+}
+
+.novosti-video {
+    width: 98%;
+    margin: 1%;
+    padding: 0;
+    display: inline-block;
+}
+
+.nastava-sve {
+    width: 80%;
+    margin: 2em 10%;
+    padding: 0;
+    display: inline-block;
+}
+
+.naziv-k {
+    width: 46%;
+    margin: 0.5em 2% 0.5em 0;
+    padding: 0;
+    float: left;
+}
+
+.kolegij {
+    width: 46%;
+    margin: 0.5em 0 0.5em 2%;
+    padding: 0;
+    float: left;
+}
+
+#kontakt {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 10%;
+}
+
+input[type=text], select, textarea, email, checkbox {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0000ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0000cf;
+}
+
+input[type=reset] {
+  background-color: #ff0000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #c60000;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: url(../slike/zaiskri-bg.jpg) no-repeat center;
+    background-size: cover;
+}
